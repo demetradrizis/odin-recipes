@@ -4,10 +4,115 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <title>Recipes</title>
+    <title>Divorce For Men</title>
 </head>
 <body>
-    <h1> Odin Recipes </h1>
-    <a href="recipes/lasagna.html">Lasagna</a>
+    <header>
+        
+        <div style="display: flex; align-items: center; justify-content: flex-start; width: 100%; padding: 10px 0;">
+            <!-- Wrap the image in a link to go back to index.html -->
+            <a href="index.html">
+                <img src="./images/scale.png" height="50" width="50" alt="scale image">
+            
+            <div style="color: black; background-color: white; font-size: 30px; font-weight: bold; margin-left: 30px; white-space: nowrap; display: flex; align-items: center;">
+                Divorce For Men
+            </a>
+            </div>
+            <div style="color: black; font-size: 20px; font-weight: bold; text-align: right; width: 100%; padding-left: 30px;">
+                Call for a Consultation: 727-942-1224
+            </div>       
+        </div>
+        <nav style="width: 100%; text-align: right;">
+            <link rel="stylesheet" href="./styles.css">
+            <a href="index.html">Home</a>
+
+                        <!-- Staff dropdown -->
+            <div class="dropdown">
+                <a href="staff/staff.html">Staff</a>
+                <div class="dropdown-content">
+                    <a href="staff/staff.html">Johnny D. Drizis</a>
+                    <a href="staff/staff.html">Irene Romero</a>
+                    <a href="staff/staff.html">James Vricos</a>
+                </div>
+            </div>
+
+
+            <a href="practice_areas/practice-areas.html">Practice Areas</a>
+            <a href="testimonials/testimonails.html">Testimonials</a>
+            <a href="resources/resources.html">Resources</a>
+            <a href="blog/blog.html">Blog</a>
+            <a href="payment/payment.html">Make a Payment</a>
+            <a href="contact/contact.html">Contact</a>
+        </nav>
+
+
+    </header>
+    <main>
+        <div class="image-container">
+            <img id="full-width-image" src="./images/kid-on-shoulders.jpg" alt="Kid on shoulders">
+            <div class="overlay-text">
+                GIVING MEN AN EQUAL VOICE IN DIVORCE
+            </div>
+
+            <div class="quote-text">
+                “We live in a time when men are called upon to serve as parents in every way. Making sure they get treated properly in court has been the focus of my career.” – Johnny D. Drizis
+            </div>
+            <a href="contact/contact.html" class="contact-button">Contact Us to Learn More</a>
+        </div>
+        <div class="location-box">
+            Serving Clearwater, Florida, The Tri-County Area And Beyond
+        </div>
+
+        <div class="square-container">
+            <div class="square" id="square1">Child Support</div>
+            <div class="square" id="square2">Divorce</div>
+            <div class="square" id="square3">Parenting Time</div>
+            <div class="square" id="square4">Paternity</div>
+            <div class="square" id="square5">Prenuptial Agreements</div>
+        </div>
+
+    <!-- JavaScript to add interactivity -->
+        <script>
+            document.querySelectorAll('.square').forEach((square, index) => {
+                square.addEventListener('click', () => {
+                    // Toggle the 'clicked' class to change the square's style when clicked
+                    square.classList.toggle('clicked');
+                    alert(`You clicked square #${index + 1}`);
+                });
+            });
+        </script>
+
+        <!-- Container for image and text block -->
+        <div class="container">
+            <!-- Image that takes up 30% of the width -->
+            <div class="image-container">
+                <img src="./images/do-you-know-pic.webp" alt="do you know your rights as a father?">
+            </div>
+    
+            <!-- Text Block to the right of the image -->
+            <div class="text-container">
+                <h1>DO YOU KNOW YOUR RIGHTS AS A FATHER? </h1>
+                <p><strong>Men have rights when it comes to parenting time.</strong> Yet so many fathers feel helpless when it comes time to determine a child custody arrangement.</p>
+                <p>The truth is, many men simply do not know what their rights are from a legal perspective when it comes to parenting.</p>
+                <p>Don’t let misinformation or fear keep you from valuable time with your children. Florida courts do not favor one parent over the other. Get an advocate attorney on your side as you face these important decisions.</p>
+      
+            </div>
+        </div>
+
+         <!-- Container for Image and Overlay Text -->
+        <div class="cross-image-container">
+            <!-- Image that takes up the full width of the screen -->
+            <img src="./images/cross.webp" alt="cross">
+            
+            <!-- Text Box Overlay on top of the image -->
+            <div class="text-overlay">
+                <h2>Concerned For Your Long-Term Needs</h2>
+                <p>Divorce isn’t the easy way out. At Divorce For Men, we urge that divorce should be the last option and that our clients consider counseling with a pastor, priest or other professional. But when reconciliation isn’t an option, we are here.</p>
+                <p>We work with men facing all issues related to their divorce – parenting time, child support, alimony, property division, and much more. We also work with men seeking a modification of existing orders in the years following divorce or separation.</p>
+                
+            </div>
+        </div>
+
+    </main>
 </body>
 </html>

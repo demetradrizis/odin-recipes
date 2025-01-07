@@ -1,0 +1,256 @@
+nav a {
+    margin-left: 30px; /* Space between the links */
+    text-decoration: none;
+    color: black;
+    letter-spacing: 1px; /* Space between the letters */
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+/* Dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown link (Staff) */
+.dropdown > a {
+    cursor: pointer;
+}
+
+/* The dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Dropdown links */
+.dropdown-content a {
+    color: white;
+    padding: 10px 14px;
+    text-decoration: none;
+    display: block;
+    white-space: nowrap;
+}
+
+/* Hover effect for dropdown links */
+.dropdown-content a:hover {
+    background-color: black;
+}
+
+/* Show the dropdown when hovering over the "Staff" link */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/* Container to wrap the image and the text */
+.image-container {
+    position: relative; /* This makes the text container relative to the image */
+    width: 100%;
+    height: 650px;
+}
+
+/* Full-width image */
+#full-width-image {
+    width: 100%;        /* Makes the image span the entire width of the screen */
+    height: 650px;       /* Maintains the aspect ratio */
+    display: block;     /* Removes any space below the image */
+    margin-top: 20px;
+}
+
+/* Text that overlays the image */
+.overlay-text {
+    position: absolute;  /* Position the text absolutely within the container */
+    top: 50%;            /* Position the text at the vertical center */
+    left: 50%;           /* Position the text at the horizontal center */
+    transform: translate(-50%, -50%);  /* Adjust for exact centering */
+    font-size: 72px;     /* Adjust font size as necessary */
+    color: white;        /* Text color (white for contrast with the image) */
+    font-weight: bold;   /* Make the text bold */
+    text-transform: uppercase; /* Transform text to uppercase */
+    text-align: center;  /* Center-align the text */
+    width: 100%;         /* Make sure the text spans the width */
+    left: 50%;
+    padding: 0 20px;     /* Add some padding if needed */
+    z-index: 1;          /* Ensure the text is above the image */
+}
+/* Text that overlays the image (Quote Text) */
+.quote-text {
+    position: absolute;  /* Position the quote text absolutely within the container */
+    top: 70%;            /* Position the quote just below the main text */
+    left: 50%;           /* Center the quote horizontally */
+    transform: translateX(-50%);  /* Adjust for exact centering */
+    font-size: 18px;     /* Smaller font size for the quote */
+    color: white;        /* Text color (white for contrast with the image) */
+    font-style: italic;  /* Italicize the quote for emphasis */
+    text-align: center;  /* Center-align the text */
+    width: 50%;          /* Limit the width of the quote text */
+    left: 50%;           /* Start the quote at 25% of the container width */
+    padding: 0 20px;     /* Add some padding if needed */
+    z-index: 1;          /* Ensure the quote is above the image */
+}
+/* Style for the Contact Us box */
+.contact-button {
+    position: absolute;  /* Position the button absolutely within the container */
+    top: 80%;            /* Position the box just below the quote text */
+    left: 50%;           /* Center the box horizontally */
+    transform: translateX(-50%);  /* Adjust for exact centering */
+    background-color: #103b68; /* Blue background color */
+    color: white;        /* White text color */
+    padding: 15px 25px;  /* Add padding for better spacing inside the box */
+    font-size: 22px;     /* Adjust font size for the button text */
+    font-weight: bold;   /* Make the button text bold */
+    text-align: center;  /* Center-align the button text */
+    border-radius: 5px;  /* Rounded corners */
+    border: 2px solid white; /* White border around the button */
+    text-decoration: none; /* Remove underline from the link */
+    display: inline-block; /* Ensure the button is inline-block */
+    z-index: 1;          /* Ensure the button is above the image */
+    transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth background and border color transitions */
+}
+/* Hover effect for the contact button */
+.contact-button:hover {
+    background-color: #010102; /* Darker blue on hover */
+    border-color: white;  /* Change the border to match the background on hover */
+    cursor: pointer; /* Change cursor to pointer */
+}
+/* Style for the black box with location information */
+.location-box {
+    position: absolute;  /* Position the location box absolutely within the container */
+    top: 95%;            /* Position the box just below the Contact button */
+    left: 50%;           /* Center the box horizontally */
+    transform: translateX(-50%);  /* Adjust for exact centering */
+    background-color: black; /* Black background */
+    color: white;        /* White text */
+    padding: 10px 0;      /* Vertical padding for spacing */
+    font-size: 24px;     /* Font size for the location text */
+    font-weight: bold;   /* Bold text */
+    font-family: "Lucida Console";
+    width: 80%;          /* Set width to 80% of the container (image width) */
+    text-align: center;  /* Center the text inside the box */
+    z-index: 1;          /* Ensure the box is above the image */
+    border-radius: 5px;  /* Rounded corners for a smooth look */
+}
+/* Container for the squares */
+.square-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);  /* 5 equal columns */
+    gap: 25px;
+    padding: 80px;
+    width: 80%;
+    margin: 0 auto;
+    left: 50%;
+}
+
+/* Style for individual squares */
+.square {
+    width: 200px;
+    height: 225px;
+    background-color: #000000;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover effect */
+.square:hover {
+    transform: scale(1.1);
+    background-color: #8cbcdd;
+}
+
+/* Active state when clicked */
+.square:active {
+    transform: scale(1);
+    background-color: #1abc9c;
+}
+
+/* Optional, display message when clicked */
+.square.clicked {
+    background-color: #2ecc71;
+    color: #fff;
+}
+
+/* Flexbox Container for Image and Text */
+.container {
+    display: flex; /* Align items side by side */
+    justify-content: flex-start; /* Align the items to the left */
+    width: 100%; /* Ensure the container takes up the full width of the page */
+    padding: 20px;
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+/* Image Styling (Smaller size) */
+.image-container img {
+    width: 500px; /* Set the image width to 100px */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: Adds rounded corners */
+}
+
+/* Text Block Styling */
+.text-container {
+    width: 135%; /* The text block will now take up 65% of the page width */
+    height:fit-content;
+    padding: 15px;
+    background-color: #ffffff; /* Background for the text box */
+    margin-left: 20px; /* Space between the image and text */
+}
+
+/* Paragraph Styling inside Text Block */
+.text-container p {
+    font-size: 22px;
+    line-height: 1.6;
+    color: #333; /* Dark text for readability */
+}
+/* Container for Image */
+.cross-image-container {
+    position: relative; /* To position the text box relative to the image */
+    width: 100%; /* Make the container span the full width of the screen */
+    height: 100vh; /* Full height of the viewport */
+    margin-top: -10px; /* Adjust this value to add space between the image and the content above */
+}
+
+/* Image Styling */
+.cross-image-container img {
+    position: relative; /* This makes the text container relative to the image */
+    width: 100%;
+    height: 550px;
+}
+
+/* Overlay Text Box Styling */
+.text-overlay {
+    position: absolute; /* Position it relative to the .image-container */
+    top: 35%; /* Vertically center the text */
+    left: 50%; /* Horizontally center the text */
+    transform: translate(-50%, -50%); /* Adjust for exact centering */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: white; /* Text color */
+    padding: 60px;
+    text-align: center;
+    border-radius: 8px; /* Optional: Adds rounded corners */
+    max-width: 100%; /* Optional: Limits the width of the text box */
+    width: 75%;
+    border: 2px dotted white;
+}
+
+/* Text Styling inside the Overlay */
+.text-overlay h2 {
+    margin: 0;
+    font-size: 3rem;
+    padding: 30px;
+    margin-top: -30px; /* Move the header closer to the top of the box */
+}
+
+.text-overlay p {
+    font-size: 24px;
+    margin-top: 20px;
+}
