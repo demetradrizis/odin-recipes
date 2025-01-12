@@ -36,7 +36,7 @@ nav a {
     display: none;
     position: absolute;
     background-color: black;
-    min-width: 200px;
+    min-width: 265px;
     width: 100%;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 10;
@@ -51,7 +51,7 @@ nav a {
     display: block;
     white-space: nowrap;
     margin-left: 0px;
-    width: 95%;
+    width: 100%;
     text-align: left;
 }
 
@@ -59,9 +59,9 @@ nav a {
 .dropdown-content a:hover {
     background-color: rgb(255, 255, 255);
     color: #000000;
-    width: 75%;
+    width: 90%;
     align-content: left;
-    margin-left: 20px;
+    
 }
 
 /* Show the dropdown when hovering over the "Staff" link */
@@ -92,6 +92,46 @@ nav a {
   margin-top: 0px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
+
+/* Media Queries for Mobile Compatibility for the stuff above*/
+@media (max-width: 768px) {
+  nav a {
+      font-size: 18px;
+      margin-left: 10px; /* Reduce space between links on smaller screens */
+  }
+
+  .dropdown-content {
+      min-width: 200px; /* Adjust dropdown width for smaller screens */
+  }
+
+  .banner-container {
+      font-size: 16px; /* Reduce font size for mobile */
+      padding: 20px 0; /* Reduce padding for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  nav a {
+      font-size: 16px;
+      margin-left: 5px; /* Further reduce space between links */
+  }
+
+  .banner-container {
+      font-size: 14px; /* Further reduce font size */
+      padding: 15px 0; /* Adjust padding */
+      height: auto; /* Allow dynamic height */
+  }
+
+  .banner-under {
+      font-size: 14px; /* Adjust font size */
+      padding: 10px; /* Adjust padding for mobile */
+  }
+}
+
+
+
+
 /* Container to wrap the image and the text */
 .image-container {
     position: relative; /* This makes the text container relative to the image */
@@ -493,9 +533,9 @@ nav a {
     margin: 0 auto; /* Removed extra margin to align to the top */
     background-color: rgba(0, 0, 0, 0.5); /* Slightly transparent container */
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 0px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    background-image: url('./images/clw-beach.jpg'); /* Replace with your image URL */
+    background-image: url('./images/clw-beach2.jpg'); /* Replace with your image URL */
     background-size: cover;
     background-position: center;
   }
@@ -503,6 +543,7 @@ nav a {
   .form-container {
     flex: 1;
     margin-right: 20px;
+    margin-left: 100px;
   }
 
   .form-container h1 {
@@ -530,7 +571,7 @@ nav a {
     font-size: 1rem;
     border: 1px solid #ccc;
     border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0.7); /* Transparent input fields */
+    background-color: rgba(0, 0, 0, 0); /* Transparent input fields */
     color: #333;
   }
 
@@ -545,17 +586,20 @@ nav a {
   }
 
   .btn {
-    background-color: #007bff;
+    background-color: #000000;
     color: white;
-    border: none;
+    border-color: #ffffff;
     padding: 10px 15px;
     font-size: 1rem;
     border-radius: 5px;
     cursor: pointer;
+
   }
 
   .btn:hover {
-    background-color: #0056b3;
+    background-color: #ffffff;
+    color:#000000;
+    border-color: #000000;
   }
 
   .office-info {
@@ -590,3 +634,54 @@ nav a {
   .office-info a:hover {
     text-decoration: underline;
   }
+
+  /* this is for the practice areas page*/
+  .container-practiceareas {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 20px;
+    width: 100%;
+    height: 500px;
+    padding-bottom: 275px;
+}
+
+.main-content {
+    flex: 2;
+    padding-right: 20px;
+}
+
+.sidebar {
+    flex: 1;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    margin-right: 50px;
+    width: 25%;
+}
+
+.sidebar h2 {
+    border-bottom: 1px solid white;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    margin-top: 10px;
+    padding-top: 5px;
+}
+
+.sidebar ul ul {
+    margin-top: 10px;
+    margin-left: 20px;
+    list-style-type: none;
+}
